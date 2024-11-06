@@ -17,12 +17,13 @@ source:
   sha256: 91ca8fb55267fbc11c45255df5e8b8a905b9d5b3695b768787988eaffafc582a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not win]
 
 requirements:
   build:
     - {{ compiler('m2w64_c') }}
+    - {{ stdlib("c") }}
 
 test:
   commands:
